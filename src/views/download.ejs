@@ -1,0 +1,25 @@
+<%- include('./partials/header.ejs') %>
+<div class="container text-center mt-5">
+  <div class="row">
+    <div class="col-10 offset-1">
+      <h1 class="bg-success text-center">Email Extractor</h1>
+
+      <form action="download" method="post">
+        <input
+          type="hidden"
+          name="emailsData"
+          value="<%= JSON.stringify(emailsData) %>"
+        />
+        <button type="submit" class="btn btn-primary mt-4" id="submitButton">
+          Download CSV file
+        </button>
+      </form>
+      <!-- <form action="/" method="get">
+        <button type="submit" class="btn btn-primary mt-4">Goto Home</button>
+      </form> -->
+    </div>
+  </div>
+</div>
+<%- include('./partials/footer.ejs') %>
+
+<!-- GET /api/v1/form -->

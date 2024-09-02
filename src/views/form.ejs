@@ -38,12 +38,5 @@
 
     // Show the loader
     document.getElementById('loader').style.display = 'inline-block';
-
-    // Hide the loader and reset the form after 3 seconds
-    setTimeout(function() {
-      document.getElementById('loader').style.display = 'none';
-      document.getElementById('submitButton').disabled = false;
-      document.getElementById('emailForm').reset();
-    }, 3000);
   });
 </script>
